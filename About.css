@@ -1,0 +1,162 @@
+body {
+    background-color: #231E39;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.cover_bg { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover_card {
+    border-radius: 15px;
+    width: 350px;
+    background-color: #211169;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    color: white; /* Text color */
+}
+.Pro { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    padding: 2px 2px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin :20px 20px;  
+    background-color:orange;
+    border-radius: 4px;
+}
+.pro span {
+    font-size: 10px;
+}
+.profile_bg {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.profile_cycle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 6px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 2px solid rgb(1, 255, 238);
+}
+
+.profile_cycle2 {
+    border-radius: 50%;
+    width: 145px;
+    height: 145px;
+    border: 2px solid rgb(1, 255, 238);
+}
+.profile_cycle2 > img {
+    border-radius: 50%;
+    width: 145px;
+    height: 145px;
+    object-fit: cover;
+}
+.my_text {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 8px;
+    
+}
+.my_text > h3,span,p {
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.btn_cover {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+
+}
+.btn_message {
+    width: 120px;
+    padding: 15px 15px;
+    border-radius: 4px;
+    border-color: #03aaf2;
+    color: white;
+    font-style: inherit;
+    background-color:rgb(14, 4, 73) ;
+    cursor: pointer;
+}
+.btn_message:hover {
+    background-color: #3d5b68;
+}
+.btn_follower {
+    width: 120px;
+    padding: 15px 15px;
+    border-radius: 4px;
+    border:2px solid #038FCB;
+    color: white;
+    font-style: inherit;
+    background-color:transparent ;
+    cursor: pointer;
+}
+.btn_follower:hover {
+    background-color:#2a424d;
+}
+
+.look_my_skill {
+    margin-top: 10px;
+    padding: 10px; 
+    color: rgb(246, 246, 246);
+    border-radius: 5px;
+    background-color: rgb(14, 1, 81);
+}
+
+.look_my_skill .btn { 
+    border: 2px solid #12b8ff;
+    background-color: transparent;
+    margin: 5px; 
+    color: beige;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.skill-list  {
+    display: flex;
+    flex-wrap: wrap; 
+}
+.skill-list :hover {
+    background-color: rgb(0, 21, 247);
+}
+
+label { 
+    display: block; 
+    margin-top: 5px;
+}
+textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #dbcbcb;
+}
+.btn_submit button  {
+   display: flex;
+   border: 2px solid rgb(14, 0, 0);
+   border-radius: 3px;
+   color: whitesmoke;
+   font-weight: bold;
+   background-color: #038FCB;
+   cursor: pointer;
+}
+.btn_submit :hover {
+    background-color: #2a424d;
+}

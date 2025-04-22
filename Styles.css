@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: dodgerblue;
+  --color-light: rgb(255, 255, 255);
+  --border-radius-one: 15px;
+  --border-radius-two: 20px;
+  --box-shadow-1: 0 0 6px rgb(133, 124, 124);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(166, 185, 190);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+p,
+li,
+span {
+  font-size: 2rem;
+
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(1, 255, 149);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Koulen", sans-serif;;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+}
+
+/* container-width */
+.container-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  text-emphasis: center;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: var(--border-radius-one);
+  cursor: pointer;
+}
+.button-primary {
+  color: dark;
+  background-color: var(--primary-color);
+}
+.button-secondaary {
+  background-color: rgb(88, 107, 92);
+}
+.button-accent {
+  background-color: rgb(103, 104, 108);
+}
+.button-block {
+  width: 100%;
+}
+/* Grid hero section and course */
+.grid-1x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-1x3 {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.grid-1x4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media screen and (max-width: 900px) {
+  .grid-1x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid-1x2 {
+    grid-template-columns: 1fr;
+  }
+  .grid-1x3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-1x4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* navigation bar */
+.top-page {
+  background-color: rgb(152, 152, 153);
+  padding: 1.5rem 0;
+  position: sticky;
+
+  backdrop-filter: blur(75px);
+  -webkit-backdrop-filter: blur(75px);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo > img {
+  width: 100%;
+  border-radius: 90%;
+}
+
+.nav-lists {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 100%;
+}
+.nav-link > a {
+  font-family: "Koulen", sans-serif;;
+  color: var(--color-light);
+  /* transition: color 0.3s ease; */
+}
+.nav-link a:hover {
+  color: rgba(71, 71, 71, 0.897);
+}
+.icon-toggler >span >i {
+  color: var(--color-light);
+  display: block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+  }
+
+  .icon-toggler {
+    display: block;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 2rem;
+  }
+
+  /* Your true Bro/java. */
+  .nav-lists.show {
+    display: flex;
+  }
+
+  .nav-links {
+    border-bottom: 1px solid #c3b5b5;
+  }
+  .nav-lists.active {
+    display: flex;
+  }
+} /* end of navigation bar */
+
+/* hero section */
+.hero {
+  background-color: rgb(83, 86, 86);
+}
+.grid-hero {
+  align-items: center;
+}
+.hero-image {
+  max-width: 350px;
+}
+.hero-image > img {
+  width: 100%;
+  object-fit: cover;
+}
+.hero-heading {
+  line-height: 1.2;
+  color: var(--color-light);
+}
+.hero-description {
+  margin: 2rem 0;
+  color: var(--color-light);
+}
+@media screen and (max-width: 768px) {
+  .grid-hero {
+    padding: 1rem;
+  }
+  .hero-description {
+    text-align: center;
+  }
+}
+strong {
+  color: rgb(241, 90, 3);
+}
+.p {
+  color: var(--color-light);
+}
+/* end of hero sectoin */
+
+/* my courses section  */
+.popular-course {
+  padding: 0 2rem;
+}
+
+.detail-heading {
+  text-align: center;
+  font-size: 5.5rem;
+  margin: 6.5rem 0rem;
+}
+
+.course-card {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: var(--border-radius-two);
+  box-shadow: var(--box-shadow-1);
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.course-image > img {
+  width: 100%;
+  transition: transform 0.2s;
+  padding: 2rem;
+  object-fit: cover;
+}
+/*note for transiction */
+.course-heading,
+.course-card > p {
+  text-align: center;
+  font-family: 'Battambang';
+}
+.course-card > p {
+  margin: 2.5rem;
+}
+.button-container {
+  display: flex;
+  gap: 2.5rem;
+}
+.course-card:hover .course-image > img {
+  transform: scale(1.1);
+  object-fit: cover;
+}
+/* end of my courses section */
+/* my catagaries section */
+:root {
+  --border-radius-two: 10px;
+}
+
+.CT-heading {
+  text-align: center;
+  font-size: 8rem;
+  margin: 5rem 0rem;
+  color: rgb(40, 40, 31);
+}
+
+.icon-course-one {
+  width: 120px;
+  transition: transform 0.1s;
+  margin-bottom: 1rem; 
+}
+
+.icon-course-one > img {
+  width: 100px;
+  border-radius: 60%;
+}
+
+.course-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(96, 92, 92);
+  border-radius: var(--border-radius-two);
+  padding: 2rem;
+}
+
+.course-one:hover > .icon-course-one > img {
+  transform: scale(1.2);
+}
+
+.course-one h3 { 
+  color: rgb(233, 229, 229); 
+  font-family:khmer;
+  margin-bottom: 0.5rem;
+
+}
+.course-one p { 
+  color: var(--color-light); 
+  text-align: center; 
+}
+/* end of my catagaries */
+
+/* footer */
+.footer {
+  margin-top: 5rem;
+  background-color: rgb(232, 229, 221);
+  padding: 4rem 2rem;
+  color: rgb(150, 140, 140);
+}
+.footer-links > a:hover {
+  color: var(--color-light); 
+}
+.CPR {
+  color: rgb(80, 13, 13);
+}
+/* end of my footer  */
